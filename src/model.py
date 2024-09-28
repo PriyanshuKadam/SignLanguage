@@ -36,7 +36,7 @@ def save_model(model, model_file):
 def load_model(model_file):
     return models.load_model(model_file)  # Load entire model from .h5 file
 
-def train_and_predict(x_train, x_test, x_holdout, img_width, img_height, batch_size, no_of_classes, uploaded_file=None, model_file='model.h5'):
+def train_and_predict(x_train, x_test, x_holdout, img_width, img_height, batch_size, no_of_classes, uploaded_file=None, model_file='sr/model.h5'):
     input_shape = (img_width, img_height, 3)
 
     # Check if the model already exists
