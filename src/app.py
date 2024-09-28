@@ -3,7 +3,7 @@ from model import train_and_predict
 from data import prepare_data
 
 # Load the dataset
-train_folder = '/data'
+train_folder = 'data'
 
 # Prepare data for training
 x_train, x_test, x_holdout, no_of_classes, img_width, img_height, batch_size = prepare_data(train_folder)
